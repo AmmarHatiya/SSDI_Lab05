@@ -90,32 +90,32 @@ public class StudentRecord extends Application {
         TableView<StudentRecord> tableView = new TableView<StudentRecord>(data);
 
         TableColumn<StudentRecord, String> sidcol = new TableColumn<StudentRecord, String>("S.ID");
-        sidcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        sidcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("StudentID"));
         
         tableView.getColumns().add(sidcol);
 
         TableColumn<StudentRecord, String> acol = new TableColumn<StudentRecord, String>("Assignments");
-        acol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        acol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("assignments"));
         
         tableView.getColumns().add(acol);
 
         TableColumn<StudentRecord, String> midcol = new TableColumn<StudentRecord, String>("Midterm");
-        midcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        midcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("midterm"));
         
         tableView.getColumns().add(midcol);
 
         TableColumn<StudentRecord, String> fcol = new TableColumn<StudentRecord, String>("Final");
-        fcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        fcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Final"));
         
         tableView.getColumns().add(fcol);
 
         TableColumn<StudentRecord, String> lcol = new TableColumn<StudentRecord, String>("Letter");
-        lcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        lcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("mark"));
         
         tableView.getColumns().add(lcol);
 
         TableColumn<StudentRecord, String> markcol = new TableColumn<StudentRecord, String>("Grade");
-        markcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("Studentnum"));
+        markcol.setCellValueFactory(new PropertyValueFactory<StudentRecord, String>("letterGrade"));
         
         tableView.getColumns().add(markcol);
 
